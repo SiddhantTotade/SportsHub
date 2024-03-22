@@ -11,7 +11,7 @@ export default function Sports() {
   return (
     <>
       <section className="flex justify-center">
-        <div className="flex flex-col gap-5 min-[320px]:w-[95%]  lg:w-[85%] md:w-[95%] min-[1050px]:w-[95%] sm:w-[95%]">
+        <div className="flex flex-col gap-5 min-[320px]:w-[95%]  lg:w-[80%] md:w-[95%] sm:w-[95%]">
           <h2 className="font-bold text-3xl dark:text-[#fff] decoration-[#738FFF] underline underline-offset-4">
             Sports
           </h2>
