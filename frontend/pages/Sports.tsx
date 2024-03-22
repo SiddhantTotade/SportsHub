@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import SportCard from "./SportsCard";
-import TicketCard from "../collectionSpotlight/TicketCard";
+import SportCard from "../components/sports/SportsCard";
+import TicketCard from "../components/collectionSpotlight/TicketCard";
 import { useTheme } from "next-themes";
 
 export default function Sports() {
