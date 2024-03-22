@@ -1,0 +1,35 @@
+.react-multiple-carousel__arrow--left {
+  background: transparent;
+  position: absolute;
+  padding: 15px;
+  left: -0%;
+  border-radius: 0%;
+  border: 1px solid #2c9cf0;
+  z-index: 1000;
+}
+
+.react-multiple-carousel__arrow--right {
+  background: transparent;
+  position: absolute;
+  padding: 15px;
+  right: -0%;
+  border-radius: 0%;
+  border: 1px solid #2c9cf0;
+  z-index: 1000;
+}
+
+.react-multiple-carousel__arrow--right::before {
+  color: #2c9cf0;
+}
+
+.react-multiple-carousel__arrow--left::before {
+  color: #2c9cf0;
+}
+
+.react-multiple-carousel__arrow--left:hover {
+  background: none;
+}
+
+.react-multiple-carousel__arrow--right:hover {
+  background: none;
+}
