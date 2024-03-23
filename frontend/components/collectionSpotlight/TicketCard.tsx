@@ -35,7 +35,7 @@ const responsive = {
 export default function TicketCard() {
   const { theme } = useTheme();
   return (
-    <div className="w-[80%] m-auto mt-10">
+    <div className="lg:w-[80%] md:w-[80%] sm:w-[80%] m-auto mt-10">
       <Carousel
         swipeable={false}
         draggable={false}
@@ -44,11 +44,11 @@ export default function TicketCard() {
         containerClass="carousel-container"
       >
         {ticketData.map((item, index) => (
-          <PageCard key={index} className="p-5 w-[100%] flex justify-center">
-            <div className="bg-white dark:bg-[#3B3E47] min-w-2/4 flex flex-col items-center p-3 shadow-lg relative">
+          <PageCard key={index} className="p-5 lg:w-[100%] flex justify-center">
+            <div className="lg:w-[90%] md:w-[40%] sm:w-[50%] bg-white dark:bg-[#3B3E47] flex flex-col items-center p-3 shadow-lg relative">
               <div className="flex pb-7 justify-center">
                 <PageImage
-                  className="w-[80%] shadow-xl"
+                  className="lg:w-[90%] md:w-[100%] sm:w-[100%] shadow-xl"
                   src={item.thumbnail}
                   alt={item.alt}
                 />

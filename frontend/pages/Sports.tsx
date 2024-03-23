@@ -25,9 +25,9 @@ export default function Sports() {
           </div>
         </div>
       </section>
-      <section className="mb-10">
+      <section className="flex mt-36 items-center min-[400px]:p-5">
         <div
-          className="w-[80%] h-[918px] m-auto p-auto"
+          className="w-[100%] lg:h-[918px] min-[700px]:w-[100%] m-auto p-auto"
           style={{
             background:
               theme === "dark"
@@ -35,10 +35,8 @@ export default function Sports() {
                 : "linear-gradient(90deg, rgba(249,248,255,1) 0%, rgba(243,249,255,1) 35%)",
           }}
         >
-          <div className="w-[70%] mt-[6rem] m-auto flex flex-col items-center">
-            <h1 className="font-[700] mt-[4rem] text-[50px]">
-              Collection Spotlight
-            </h1>
+          <div className="w-[70%] mt-[5rem] m-auto flex flex-col items-center">
+            <h1 className="font-[700] text-[50px]">Collection Spotlight</h1>
             <span className="font-[400] text-[14px] text-center">
               Discover extraordinary moments with our Spotlight Collection
               metatickets—exclusive access to premium events for an
