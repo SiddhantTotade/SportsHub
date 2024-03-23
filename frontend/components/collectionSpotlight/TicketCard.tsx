@@ -8,62 +8,26 @@ import PageCard from "../_common/PageCard";
 import { ticketData } from "./data/data";
 import PageImage from "../_common/PageImage";
 
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import "./styles/CarouselButtons.css";
-
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 3,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1290, min: 464 },
-    items: 1,
-  },
-  miniTablet: {
-    breakpoint: { max: 1300, min: 790 },
-    items: 2,
-  },
-  miniTablet2: {
-    breakpoint: { max: 1030, min: 790 },
-    items: 1,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
+import PageCarousel from "../_common/PageCarousel";
 
 export default function TicketCard() {
   const { theme } = useTheme();
   return (
-    <div className="w-[90%] m-auto mt-10">
-      <Carousel
-        swipeable={false}
-        draggable={false}
-        responsive={responsive}
-        infinite={true}
-        containerClass="carousel-container"
-      >
+    <div className="w-[85%] m-auto mt-10">
+      <PageCarousel>
         {ticketData.map((item, index) => (
           <PageCard key={index} className="p-5 w-[100%] flex justify-center">
-            <div className="lg:w-[90%] md:w-[40%] sm:w-[50%] bg-white dark:bg-[#3B3E47] flex flex-col items-center p-3 shadow-lg relative">
+            <div className="lg:w-[80%] md:w-[40%] sm:w-[50%] bg-white dark:bg-[#3B3E47] flex flex-col items-center p-3 shadow-lg relative">
               <div className="flex pb-7 justify-center">
                 <PageImage
-                  className="lg:w-[80%] shadow-xl"
+                  className="lg:w-100%] shadow-xl"
                   src={item.thumbnail}
                   alt={item.alt}
                 />
               </div>
               <div className="min-[320px]:w-[125%] w-[110%] relative flex items-center">
                 <span
-                  className="w-[15%] h-[4vh] rounded-full min-[320px]:top-[53%] lg:top-[68.05%] left-[-6%]"
+                  className="w-[15%] h-[5vh] rounded-full min-[320px]:top-[53%] lg:top-[68.05%]"
                   style={{
                     background:
                       theme === "dark"
@@ -74,7 +38,7 @@ export default function TicketCard() {
                 ></span>
                 <span className="w-[100%] h-0 border-dashed border-2"></span>
                 <span
-                  className="w-[15%] h-[4vh] rounded-full min-[320px]:top-[53%] lg:top-[68.05%] right-[-6%]"
+                  className="w-[15%] h-[5vh] rounded-full min-[320px]:top-[53%] lg:top-[68.05%]"
                   style={{
                     background:
                       theme === "dark"
@@ -105,7 +69,7 @@ export default function TicketCard() {
             </div>
           </PageCard>
         ))}
-      </Carousel>
+      </PageCarousel>
     </div>
   );
 }

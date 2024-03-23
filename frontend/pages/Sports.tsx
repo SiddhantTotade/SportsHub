@@ -27,7 +27,7 @@ export default function Sports() {
       </section>
       <section className="flex mt-36 items-center min-[400px]:p-5">
         <div
-          className="w-[80%] lg:h-[918px] m-auto p-auto"
+          className="w-[80%] lg:h-[948px] m-auto"
           style={{
             background:
               theme === "dark"
