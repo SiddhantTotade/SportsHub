@@ -11,7 +11,7 @@ export default function SportCard() {
       {playerData.map((item, index) => (
         <PageCard
           key={index}
-          className="bg-[#FFFFFF] dark:bg-[#3B3E47] p-3 w-full min-w-[35%] flex flex-col gap-2 relative"
+          className="bg-[#FFFFFF] dark:bg-[#3B3E47] shadow-lg p-3 w-full min-w-[35%] flex flex-col gap-2 relative"
         >
           <PageImage
             src={item.thumbnail}

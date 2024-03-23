@@ -55,18 +55,18 @@ export default function TicketCard() {
               </div>
               <div className="min-[320px]:w-[125%] w-[110%] relative flex items-center">
                 <span
-                  className="w-[12%] h-[4.5vh] rounded-full min-[320px]:top-[53%] lg:top-[68.05%] left-[-6%]"
+                  className="w-[15%] h-[4vh] rounded-full min-[320px]:top-[53%] lg:top-[68.05%] left-[-6%]"
                   style={{
                     background:
                       theme === "dark"
                         ? "linear-gradient(180deg, rgba(24,40,42,1) 0%, rgba(34,26,44,1) 35%)"
                         : "linear-gradient(90deg, rgba(249,248,255,1) 0%, rgba(243,249,255,1) 35%)",
-                    boxShadow: "inset -4px 2px 6px 0 rgba(0, 0, 0, 0.07)",
+                    boxShadow: "inset -6px 2px 6px 0 rgba(0, 0, 0, 0.07)",
                   }}
                 ></span>
                 <span className="w-[100%] h-0 border-dashed border-2"></span>
                 <span
-                  className="w-[12%] h-[4.5vh] rounded-full min-[320px]:top-[53%] lg:top-[68.05%] right-[-6%]"
+                  className="w-[15%] h-[4vh] rounded-full min-[320px]:top-[53%] lg:top-[68.05%] right-[-6%]"
                   style={{
                     background:
                       theme === "dark"
